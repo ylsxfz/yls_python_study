@@ -1,7 +1,6 @@
 # -*- coding: UTF-8 -*-
 """
-# _*_ coding: utf-8 _*_
- @Time: 2020/7/19 0019 15:03 
+ @Time: 2020/7/19  15:03
  @Author: yls 
  @Version: V 0.1
  @File: a_basic_data_type.py

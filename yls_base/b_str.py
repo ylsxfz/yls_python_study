@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 """
 # _*_ coding: utf-8 _*_
- @Time: 2020/7/19 0019 15:30 
+ @Time: 2020/7/19  15:30
  @Author: yls 
  @Version: V 0.1
  @File: b_str.py

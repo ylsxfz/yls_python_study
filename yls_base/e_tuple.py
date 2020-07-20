@@ -1,7 +1,7 @@
 # -*- coding: UTF-8 -*-
 """
 # _*_ coding: utf-8 _*_
- @Time: 2020/7/19 0019 20:58 
+ @Time: 2020/7/19  20:58
  @Author: yls 
  @Version: V 0.1
  @File: e_tuple.py
