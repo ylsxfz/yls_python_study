@@ -288,5 +288,6 @@ if __name__ == '__main__':
     # 一键对多值字典
     dict_defauldict()
 
+    # 逻辑上的字典合并
     dict_merged()
     pass
