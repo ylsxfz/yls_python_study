@@ -33,7 +33,6 @@ class Student():
 def math_basic_operation():
     """
     数学运算：
-
         len(s):返回对象内元素个数。
 
          max(iterable,*[,key,default]):返回最大值,max、min 函数都有一个参数 key，
@@ -100,7 +99,6 @@ def math_basic_operation():
 def logical_operation():
     """
     逻辑运算：
-
         all(iterable)：接受一个迭代器，如果迭代器的所有元素都为真，返回True，否则返回False。
 
         any(iterable)：接受一个迭代器，如果迭代器里有一个元素为真，返回 True，否则返回 False。
@@ -115,7 +113,6 @@ def logical_operation():
 def base_conversion():
     """
     进制转换：
-
         ascii(object)：调用对象的repr()方法，获取该方法的返回值。
 
         bin(x)：将十进制转换为二进制。
