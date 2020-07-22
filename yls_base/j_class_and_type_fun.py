@@ -90,15 +90,17 @@ class Undergraduate(Student):
     def attendActivity(self):
         pass
 
+
 class Parent():
-    def __init__(self,x):
+    def __init__(self, x):
         self.v = x
 
-    def add(self,x):
+    def add(self, x):
         return self.v + x
 
+
 class Son(Parent):
-    def add(self,y):
+    def add(self, y):
         # 直接调用父类的add方法
         r = super().add(y)
         # 子类的add与父类相比，能实现对结果的打印功能
@@ -237,7 +239,6 @@ def type_function():
     print("[str(y) + str(x) for x,y in zip(a,b)] = %s " % str([str(y) + str(x) for x, y in zip(a, b)]))
 
 
-
 def calss_object_properties():
     """
     类对象及属性：
@@ -302,6 +303,7 @@ def calss_object_properties():
     print("callable(int) = %s " % str(callable(int)))
     print("callable(str) = %s" % str(callable(str)))
     print("callable(xiaoming) = %s " % str(callable(xiaoming)))
+
 
 if __name__ == '__main__':
     # 作用域示例
