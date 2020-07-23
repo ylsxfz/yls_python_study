@@ -278,7 +278,7 @@ def file_hash_cry32(s):
     return m.hexdigest()
 
 
-def file_starLineCnt(statfile):
+def file_starLineCnt(statfile,encoding='utf-8'):
     """
     统计文件的行数
     Args:
@@ -289,7 +289,7 @@ def file_starLineCnt(statfile):
     """
     print("文件名：" + statfile)
     cnt = 0
-    with open(statfile, encoding='utf-8') as f:
+    with open(statfile, encoding=encoding) as f:
         while f.readline():
             cnt += 1
         return cnt
@@ -374,9 +374,9 @@ if __name__ == '__main__':
     # print(file_hash_cry32('hello'))  # 5d41402abc4b2a76b9719d911017c592
 
     # 统计文件函数
-    # print(file_starLineCnt('file\\a.txt'))
+    print(file_starLineCnt('C:\\Users\\26896\\Desktop\\淘宝\\xml\\test','gbk'))
 
     # 统计文件不同之处
-    diff = file_diff_line_nos("file\\a.txt", "file\\b.txt")
-    print(diff)
+    # diff = file_diff_line_nos("file\\a.txt", "file\\b.txt")
+    # print(diff)
     pass
