@@ -56,7 +56,6 @@ def datetime_fun():
     print(str_to_time)
 
 
-
 if __name__ == '__main__':
     datetime_fun()
     pass
