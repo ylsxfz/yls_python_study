@@ -124,7 +124,7 @@ def get_file_name():
     """
     获取文件路径、文件名称、文件的后缀名
     """
-    file_name = "./data/py/test.py"
+    file_name = "./data/py/yls_work_count.py"
     file_ext = os.path.split(file_name)
     ipath, ifile = file_ext
     file_extension = os.path.splitext(file_name)
@@ -374,7 +374,7 @@ if __name__ == '__main__':
     # print(file_hash_cry32('hello'))  # 5d41402abc4b2a76b9719d911017c592
 
     # 统计文件函数
-    print(file_starLineCnt('C:\\Users\\26896\\Desktop\\淘宝\\xml\\test','gbk'))
+    print(file_starLineCnt('C:\\Users\\26896\\Desktop\\淘宝\\xml\\yls_work_count','gbk'))
 
     # 统计文件不同之处
     # diff = file_diff_line_nos("file\\a.txt", "file\\b.txt")
