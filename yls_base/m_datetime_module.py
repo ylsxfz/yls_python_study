@@ -1,9 +1,9 @@
-# _*_ coding: utf-8 _*_
+# -*- coding: UTF-8 -*-
 """
- @Time : 2020/7/23 12:33 
- @Author : yls 
- @Version：V 0.1
- @File : m_time_module.py
+ @Time: 2020/07/23 20:23 
+ @Author: yls 
+ @Version: V 0.1
+ @File: m_datetime_module.py
  @desc : Python 时间模块使用逻辑大盘点
         Python 与时间处理相关模块有：time 模块和 datetime 模块。
             time 模块， 提供 2 种时间表达方式：
@@ -20,41 +20,43 @@
                 1、年、月的日历图
                 2、闰年判断
                 3、月有几天等等
- """
-import time as time
+"""
+from datetime import date, time, datetime, timedelta
 
 
+def datetime_fun():
+    """
+    date
+    """
+    # 打印当前日期
+    tod = date.today()
+    print(tod)
 
-def time_module():
-    # 当前时间浮点数
-    seconds = time.time()
-    print(seconds)
+    # 打印日期字符串
+    str_date = date.strftime(tod, '%Y-%m-%d')
+    print(str_date)
 
-    # 时间数组
-    local_time = time.localtime(seconds)
-    print(local_time)
+    # 字符日期转日期
+    str_to_date = datetime.strptime('2020-02-22', '%Y-%m-%d')
+    print(str_to_date)
 
-    # 时间字符串
-    str_time = time.asctime(local_time)
+    """
+    datetime
+    """
+    # 打印当前时间
+    right = datetime.now()
+    print(right)
+
+    # 当前时间转字符串显示
+    str_time = datetime.strftime(right, '%Y-%m-%d %H:%M:%S')
     print(str_time)
 
-    # 格式化时间字符串
-    format_time = time.strftime("%Y-%m-%d %H:%M:%S", local_time)
-    print(format_time)
+    # 字符串时间转时间类型
+    str_to_time = datetime.strptime('2020-02-02 15:12:13', '%Y-%m-%d %H:%M:%S')
+    print(str_to_time)
 
-    """
-    字符时间转时间数组
-     %Y  年
-     %m  月 取值 [01,12]
-     %d  天 取值 [01,31]
-     %H  小时 取值 [00,23]
-     %M  分钟 取值 [00,59]
-     %S  秒 取值 [00,61]
-    """
-    str_to_struct = time.strptime(format_time, "%Y-%m-%d %H:%M:%S")
-    print(str_to_struct)
 
 
 if __name__ == '__main__':
-    time_module()
+    datetime_fun()
     pass
