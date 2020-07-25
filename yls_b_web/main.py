@@ -22,6 +22,7 @@ class User(BaseModel):
     id: int
     name: str
     friends: list
+    
 
 
 @app.get("/")

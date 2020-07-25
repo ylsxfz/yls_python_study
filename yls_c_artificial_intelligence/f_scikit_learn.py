@@ -18,8 +18,8 @@ import seaborn as sns
 if __name__ == '__main__':
     sns.set(style='ticks')
     df = sns.load_dataset('files\\iris')
-    df02 = df.iloc[:,[0,2,4]]
+    df02 = df.iloc[:, [0, 2, 4]]
     print(df02)
-    sns.pairplot(df02,hue='species')
+    sns.pairplot(df02, hue='species')
     plt.show()
     pass
