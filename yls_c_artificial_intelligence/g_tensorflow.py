@@ -11,7 +11,24 @@
         详情参考：
             http://www.tensorfly.cn/
  """
+import tensorflow as tf
+import os
+
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+
+
+def test_tensorflow():
+    sess = tf.Session()
+
+    a = tf.constant(10)
+
+    b = tf.constant(12)
+
+    c = sess.run(a + b)
+
+    print(c)
 
 
 if __name__ == '__main__':
+    test_tensorflow()
     pass
