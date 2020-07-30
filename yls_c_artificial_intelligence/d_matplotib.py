@@ -1,14 +1,14 @@
 # _*_ coding: utf-8 _*_
-"""
- @Time : 2020/7/24 12:43 
- @Author : yls 
- @Version：V 0.1
- @File : d_matplotib.py
- @desc : Matplotlib 是 Python 中非常强大的 2D 绘图工具。
-        提供方便易用的绘图接口，能使用在 Python 脚本，
-        IPython shell、Jupyter Notebook、Web 应用服务器等。详情参考：
-            https://matplotlib.org/
- """
+# """
+#  @Time : 2020/7/24 12:43
+#  @Author : yls
+#  @Version：V 0.1
+#  @File : d_matplotib.py
+#  @desc : Matplotlib 是 Python 中非常强大的 2D 绘图工具。
+#         提供方便易用的绘图接口，能使用在 Python 脚本，
+#         IPython shell、Jupyter Notebook、Web 应用服务器等。详情参考：
+#             https://matplotlib.org/
+#  """
 import numpy as np
 import matplotlib.pyplot as plt
 

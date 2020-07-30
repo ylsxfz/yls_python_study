@@ -1,17 +1,17 @@
 # _*_ coding: utf-8 _*_
-"""
- @Time : 2020/7/22 13:11 
- @Author : yls 
- @Version：V 0.1
- @File : l_file_operation.py
- @desc : Python 文件 IO 操作：
-            涉及文件读写操作
-            获取文件后缀名
-            批量修改后缀名
-            获取文件修改时间
-            压缩文件
-            加密文件等常用操作
- """
+# """
+#  @Time : 2020/7/22 13:11
+#  @Author : yls
+#  @Version：V 0.1
+#  @File : l_file_operation.py
+#  @desc : Python 文件 IO 操作：
+#             涉及文件读写操作
+#             获取文件后缀名
+#             批量修改后缀名
+#             获取文件修改时间
+#             压缩文件
+#             加密文件等常用操作
+#  """
 import os
 import re
 from collections import defaultdict

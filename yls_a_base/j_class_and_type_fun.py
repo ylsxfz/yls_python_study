@@ -1,16 +1,16 @@
 # _*_ coding: utf-8 _*_
-"""
- @Time : 2020/7/21 12:50 
- @Author : yls 
- @Version：V 0.1
- @File : j_class_and_type_fun.py
- @desc : Python 查找变量的顺序遵守 LEGB 规则，即遇到某个变量时：
-            1、优先从它所属的函数（local）内查找；
-            2、若找不到，并且它位于一个内嵌函数中，就再到它的父函数（enclosing）中查找；
-            3、如果还是找不到，再去全局作用域（global）查找；
-            4、再找不到，最后去内置作用域（build-in）查找。
-            5、若还是找不到，报错。
- """
+# """
+#  @Time : 2020/7/21 12:50
+#  @Author : yls
+#  @Version：V 0.1
+#  @File : j_class_and_type_fun.py
+#  @desc : Python 查找变量的顺序遵守 LEGB 规则，即遇到某个变量时：
+#             1、优先从它所属的函数（local）内查找；
+#             2、若找不到，并且它位于一个内嵌函数中，就再到它的父函数（enclosing）中查找；
+#             3、如果还是找不到，再去全局作用域（global）查找；
+#             4、再找不到，最后去内置作用域（build-in）查找。
+#             5、若还是找不到，报错。
+#  """
 from collections.abc import Iterable
 
 # 全局作用域

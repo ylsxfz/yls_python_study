@@ -1,18 +1,18 @@
 # _*_ coding: utf-8 _*_
-"""
- @Time : 2020/7/24 10:50 
- @Author : yls 
- @Version：V 0.1
- @File : a_numpy.py
- @desc : NumPy 是基于 Python 的开源数值计算扩展库，用来存储和处理大型矩阵。
-        相比于 Python 自身的嵌套列表（nested list structure）结构要高效得多。
-        NumPy 数组结构也能用来表示矩阵（matrix），详情参考：
-            https://numpy.org/
-        主要功能包括：
-            1、N 维数组对象 Array
-            2、成熟的广播机制
-            3、能够解决线性代数、随机数生成数相关问题
- """
+# """
+#  @Time : 2020/7/24 10:50
+#  @Author : yls
+#  @Version：V 0.1
+#  @File : a_numpy.py
+#  @desc : NumPy 是基于 Python 的开源数值计算扩展库，用来存储和处理大型矩阵。
+#         相比于 Python 自身的嵌套列表（nested list structure）结构要高效得多。
+#         NumPy 数组结构也能用来表示矩阵（matrix），详情参考：
+#             https://numpy.org/
+#         主要功能包括：
+#             1、N 维数组对象 Array
+#             2、成熟的广播机制
+#             3、能够解决线性代数、随机数生成数相关问题
+#  """
 
 import numpy as np
 import numpy.linalg as lg

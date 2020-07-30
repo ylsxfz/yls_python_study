@@ -1,15 +1,15 @@
 # _*_ coding: utf-8 _*_
-"""
- @Time : 2020/7/24 12:28 
- @Author : yls 
- @Version：V 0.1
- @File : c_pandas.py
- @desc : Pandas 是 Python 中，功能强大的数据分析库。提供关于数据分析高级的数据结构，各种各样的分析工具，确保整个数据处理的过程更加容易。详情参考：
-            https://pandas.pydata.org/
-        Pandas 两大数据结构：
-            1、一维 Series
-            2、二维 DataFrame
- """
+# """
+#  @Time : 2020/7/24 12:28
+#  @Author : yls
+#  @Version：V 0.1
+#  @File : c_pandas.py
+#  @desc : Pandas 是 Python 中，功能强大的数据分析库。提供关于数据分析高级的数据结构，各种各样的分析工具，确保整个数据处理的过程更加容易。详情参考：
+#             https://pandas.pydata.org/
+#         Pandas 两大数据结构：
+#             1、一维 Series
+#             2、二维 DataFrame
+#  """
 import pandas as pd
 
 def pandas_base():

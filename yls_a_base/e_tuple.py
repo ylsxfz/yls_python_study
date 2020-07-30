@@ -1,12 +1,12 @@
 # -*- coding: UTF-8 -*-
-"""
-# _*_ coding: utf-8 _*_
- @Time: 2020/7/19  20:58
- @Author: yls 
- @Version: V 0.1
- @File: e_tuple.py
- @Desc: 不可变容器
-"""
+# """
+# # _*_ coding: utf-8 _*_
+#  @Time: 2020/7/19  20:58
+#  @Author: yls
+#  @Version: V 0.1
+#  @File: e_tuple.py
+#  @Desc: 不可变容器
+# """
 
 from numpy import random
 

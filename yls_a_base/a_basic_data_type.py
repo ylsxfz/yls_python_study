@@ -1,11 +1,11 @@
 # -*- coding: UTF-8 -*-
-"""
- @Time: 2020/7/19  15:03
- @Author: yls 
- @Version: V 0.1
- @File: a_basic_data_type.py
- @Desc:
-"""
+# """
+#  @Time: 2020/7/19  15:03
+#  @Author: yls
+#  @Version: V 0.1
+#  @File: a_basic_data_type.py
+#  @Desc:
+# """
 from random import randint, sample
 
 

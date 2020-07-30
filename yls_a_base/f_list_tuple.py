@@ -1,11 +1,11 @@
 # _*_ coding: utf-8 _*_
-"""
- @Time : 2020/7/20 10:09 
- @Author : yls 
- @Version：V 0.1
- @File : f_list_tuple.py
- @desc : list(列表) 和 tuple(元组) 的常用实例
- """
+# """
+#  @Time : 2020/7/20 10:09
+#  @Author : yls
+#  @Version：V 0.1
+#  @File : f_list_tuple.py
+#  @desc : list(列表) 和 tuple(元组) 的常用实例
+#  """
 
 from random import randint, sample, shuffle, uniform
 from pyecharts.charts import Scatter
