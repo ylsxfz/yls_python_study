@@ -10,6 +10,7 @@
 
 from math import ceil
 
+
 def yield_fun():
     """
     直观理解 yield
@@ -93,11 +94,61 @@ def yield_list(lst):
         else:
             yield i
 
-def yield_list_group(lst,n):
-    if n<0:
-        yield  lst
+
+def yield_list_group(lst, n):
+    if n < 0:
+        yield lst
         return
-    i,div = 0,
+    i, div = 0, ceil(len(lst) / n)
+    while i < n:
+        yield lst[i * div:(i + 1) * div]
+        i += 1
+
+
+def nonlocal_fun():
+    """
+    关键词：nonlocal常用于函数嵌套中，声明变量为：非局部变量。
+    """
+    i = 0
+
+    def auto_increase():
+        nonlocal i
+        if i >= 10:
+            i = 0
+        i += 1
+
+    ret = []
+    for _ in range(28):
+        auto_increase()
+        ret.append(i)
+    print(ret)
+
+i = 5
+def global_fun():
+    """
+    global：一个变量被多个函数引用，想让全局变量被所有函数共享
+    """
+    def f():
+        print(i)
+
+    def g():
+        print(i)
+        pass
+
+    f()
+    g()
+
+    def h():
+        """
+        在函数 h 内，显示地告诉解释器 i 为全局变量，
+        然后，解释器会在函数外面寻找 i 的定义，执行完 i+=1 后，
+        i 还为全局变量，值加 1
+        """
+        global i
+        i += 1
+
+    h()
+    f()
 
 if __name__ == '__main__':
     # yield_fun()
@@ -118,9 +169,19 @@ if __name__ == '__main__':
     # print('*******************》g.send(10)《******************')
     # print(g.send(10))
 
-    # 完全展开list
-    gen = yield_list([1, ['s', 3], 23, 423, 4, 2])
-    print(gen)
-    for i in gen:
-        print(i)
+    # 使用yield：完全展开list
+    # gen = yield_list([1, ['s', 3], 23, 423, 4, 2])
+    # print(gen)
+    # for i in gen:
+    #     print(i)
+
+    # 使用yield：对列表分组
+    # print(list(yield_list_group([1, 2, 3, 4, 5], 0)))
+    # print(list(yield_list_group([1, 2, 3, 4, 5], 2)))
+
+    # 关键词 nonlocal 常用于函数嵌套中，声明变量为：非局部变量
+    # nonlocal_fun()
+
+    # global：一个变量被多个函数引用，想让全局变量被所有函数共享
+    global_fun()
     pass
