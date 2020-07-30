@@ -123,11 +123,15 @@ def nonlocal_fun():
         ret.append(i)
     print(ret)
 
+
 i = 5
+
+
 def global_fun():
     """
     global：一个变量被多个函数引用，想让全局变量被所有函数共享
     """
+
     def f():
         print(i)
 
@@ -149,6 +153,7 @@ def global_fun():
 
     h()
     f()
+
 
 if __name__ == '__main__':
     # yield_fun()
