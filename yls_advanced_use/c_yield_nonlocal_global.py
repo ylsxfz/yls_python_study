@@ -1,13 +1,12 @@
 # # _*_ coding: utf-8 _*_
-# -------------------------------------------------------------------------------
+"""
 #  @Time : 2020/7/30 10:18
 #  @Author : yls
 #  @Version：V 0.1
 #  @File : c_yield_nonlocal_global.py
 #  @desc : 很多 Python 开发者，尤其是新手，对 yield 关键字总是望而生畏，
-#         据 Stack Overflow 网站统计，yield 关键字的被提问频次高居Python类首位。
-# -------------------------------------------------------------------------------
-
+        据 Stack Overflow 网站统计，yield 关键字的被提问频次高居Python类首位。
+"""
 from math import ceil
 
 

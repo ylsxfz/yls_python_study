@@ -1,24 +1,24 @@
 # _*_ coding: utf-8 _*_
-# -------------------------------------------------------------------------------
+"""
 #  @Time : 2020/7/21 8:42
 #  @Author : yls
 #  @Version：V 0.1
 #  @File : i_math_operation.py
 #  @desc :数学运算、逻辑运算和进制转化相关的16个内置函数
-#         max(iterable,*[, key, default]):函数形参列表中符号 * 表示，
-#                     后面的形参只能为关键字参数（keyword argument），
-#                     不能为位置参数（positional argument）
-#                     例如：max(a,key=lambda x: a.count(x), default=1)
-#
-#                     [] 表示里面的形参是可选项，max 函数可被如下几种形式调用：
-#                         1、max(iterable)
-#                         2、max(iterable,*, key)
-#                         3、max(iterable,*,default)
-#                         4、max(iterable,*, key, default)
-#
-#         sum(iterable, /, start=0)：看到形参列表中有一个 /，
-#                     它表示 / 前的参数只能是位置参数，不能是关键字参数。
-# -------------------------------------------------------------------------------
+        max(iterable,*[, key, default]):函数形参列表中符号 * 表示，
+                    后面的形参只能为关键字参数（keyword argument），
+                    不能为位置参数（positional argument）
+                    例如：max(a,key=lambda x: a.count(x), default=1)
+
+                    [] 表示里面的形参是可选项，max 函数可被如下几种形式调用：
+                        1、max(iterable)
+                        2、max(iterable,*, key)
+                        3、max(iterable,*,default)
+                        4、max(iterable,*, key, default)
+
+        sum(iterable, /, start=0)：看到形参列表中有一个 /，
+                    它表示 / 前的参数只能是位置参数，不能是关键字参数。
+"""
 
 
 class Student():

@@ -1,11 +1,11 @@
 # _*_ coding: utf-8 _*_
-# -------------------------------------------------------------------------------
+"""
 #  @Time : 2020/7/24 9:15
 #  @Author : yls
 #  @Version：V 0.1
 #  @File : m_timedelta_module.py
 #  @desc : 时间相关的案例
-# -------------------------------------------------------------------------------
+"""
 import re
 from datetime import datetime, date, time, timedelta
 import calendar
