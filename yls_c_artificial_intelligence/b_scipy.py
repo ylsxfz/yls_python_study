@@ -1,12 +1,12 @@
 # _*_ coding: utf-8 _*_
-# """
+# -------------------------------------------------------------------------------
 #  @Time : 2020/7/24 11:25
 #  @Author : yls
 #  @Version：V 0.1
 #  @File : b_scipy.py
 #  @desc : SciPy基于Python，是用于数学计算的工具包。
 #         详情参考：https://www.scipy.org/
-#  """
+# -------------------------------------------------------------------------------
 from scipy.stats import norm, uniform, binom
 import numpy as np
 import matplotlib.pyplot as plt

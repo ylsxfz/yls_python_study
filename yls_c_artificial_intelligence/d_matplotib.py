@@ -1,5 +1,5 @@
 # _*_ coding: utf-8 _*_
-# """
+# -------------------------------------------------------------------------------
 #  @Time : 2020/7/24 12:43
 #  @Author : yls
 #  @Version：V 0.1
@@ -8,7 +8,7 @@
 #         提供方便易用的绘图接口，能使用在 Python 脚本，
 #         IPython shell、Jupyter Notebook、Web 应用服务器等。详情参考：
 #             https://matplotlib.org/
-#  """
+# -------------------------------------------------------------------------------
 import numpy as np
 import matplotlib.pyplot as plt
 
