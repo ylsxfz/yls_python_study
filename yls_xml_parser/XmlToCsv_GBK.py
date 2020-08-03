@@ -168,16 +168,16 @@ def redxml(source_file, file_name):
     buf = []
     for item in tree_text.find("ordersElement").findall("requestOrder"):
         line = ""
-        is_write = False
+        is_write = True
         # if "," not in str(item.find("remark").text):
         #     continue
         is_need_write, line = item_iterator(item, line, is_write)
         if '\n' not in line:
             line = line + '\n'
-        if is_need_write:
-            buf.append(line)
-            # 统计字段长度
-            line_count(line)
+        # if is_need_write:
+        buf.append(line)
+        # 统计字段长度
+        line_count(line)
     filepath, shotname, extension = jwkj_get_filePath_fileName_fileExt(source_file)
 
     if len(buf) > 0:
@@ -254,9 +254,9 @@ def item_iterator(item, line, is_need_write):
             val = str(item.text)
             if val == 'None':
                 val = ""
-            if "," in val:
-                is_need_write = True
-                val = val.replace(",", "|")
+            #if "," in val:
+                # valis_need_write = True
+            val = val.replace(",", "|")
             if line != "":
                 line = line + "," + val
             else:

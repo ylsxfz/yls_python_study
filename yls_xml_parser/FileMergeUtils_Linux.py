@@ -177,7 +177,7 @@ def megerFileController(sourcefolder, nowTargetFolder, fileName, fileSize, sourE
 
 if __name__ == '__main__':
     sourceFile = "/home/datafile/ORDERLIST/bak_20200701_20200728/target"
-    fileSize = 50000
+    fileSize = 100000
     fileName = 'merge_'
     targetFolder = "/home/datafile/ORDERLIST/bak_20200701_20200728/mergers"
     errorLink = 0
