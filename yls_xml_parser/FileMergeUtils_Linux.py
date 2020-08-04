@@ -135,18 +135,18 @@ def megerFile(sourceFile, targetFolder, fileName, fileSize, sourEncoding='utf-8'
                         buf = []
                 fin.close()
                 # 删除合并的文件
-                # os.remove(file)
-                try:
-
-                    # 文件备份
-                    move_file = file.replace(sourceFile, target_bak)
-                    # 解析文件路径、文件名称、文件后缀
-                    bak_path, bak_name, bak_ext = jwkj_get_filePath_fileName_fileExt(move_file)
-                    if not os.path.exists(bak_path):
-                        os.makedirs(bak_path)
-                    shutil.move(file, move_file)
-                except Exception as e:
-                    print(e)
+                os.remove(file)
+                # try:
+                #
+                #     # 文件备份
+                #     move_file = file.replace(sourceFile, target_bak)
+                #     # 解析文件路径、文件名称、文件后缀
+                #     bak_path, bak_name, bak_ext = jwkj_get_filePath_fileName_fileExt(move_file)
+                #     if not os.path.exists(bak_path):
+                #         os.makedirs(bak_path)
+                #     shutil.move(file, move_file)
+                # except Exception as e:
+                #     print(e)
             if len(buf) != 0:
                 fout = open(targetFolder + '/' + fileName + str(uuid.uuid1())  + ".csv", 'a',
                             encoding='utf-8', errors='ignore')
