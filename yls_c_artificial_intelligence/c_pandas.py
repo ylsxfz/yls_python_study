@@ -13,27 +13,27 @@
 """
 import pandas as pd
 
+
 def pandas_base():
-    s1 = pd.Series([3,5,7])
+    s1 = pd.Series([3, 5, 7])
     print("创建Series：")
     print(s1)
     print("**********************************")
 
-    s2 = pd.Series([3,5,7],index=list('ABC'),name="s3")
+    s2 = pd.Series([3, 5, 7], index=list('ABC'), name="s3")
     print("指定index、name：")
     print(s2)
     print("**********************************")
 
-    df = pd.DataFrame([[9,0,1],[7,3,10]],index=['a','b'],columns=['A','B','C'])
+    df = pd.DataFrame([[9, 0, 1], [7, 3, 10]], index=['a', 'b'], columns=['A', 'B', 'C'])
     print("通过嵌套列表，创建DataFrame:")
     print(df)
     print("**********************************")
 
-    df = pd.DataFrame({'A':[9,7],'B':[0,3],'C':[1,10]},index=['a','b'])
+    df = pd.DataFrame({'A': [9, 7], 'B': [0, 3], 'C': [1, 10]}, index=['a', 'b'])
     print("通过字典，创建DataFrame：")
     print(df)
     print("**********************************")
-
 
 
 if __name__ == '__main__':

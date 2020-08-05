@@ -17,6 +17,7 @@
 import numpy as np
 import numpy.linalg as lg
 
+
 def numpy_fun():
     # 矩阵
     x = np.array([[2, 1], [1, 2]])
@@ -31,7 +32,7 @@ def numpy_fun():
     print("*******************************")
 
     # 矩阵赋值
-    xt[0,0] = 1.0
+    xt[0, 0] = 1.0
     print("xt赋值后转置矩阵：")
     print(xt)
     print("*******************************")
@@ -47,7 +48,6 @@ def numpy_fun():
     print("x2的逆矩阵：")
     print(x3)
     print("*******************************")
-
 
 
 if __name__ == '__main__':
