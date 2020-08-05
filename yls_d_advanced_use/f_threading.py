@@ -86,19 +86,19 @@ def add2():
         print('%s adds a to 1: %d' % (threading.current_thread().getName(), a))
 
 
-
 def A():
-    a_list = ['1','2','3']
+    a_list = ['1', '2', '3']
     for to_b in a_list:
         from_b = yield to_b
-        print('receive %s from B'%(from_b,))
+        print('receive %s from B' % (from_b,))
         print('do some complex process for A during 200ms ')
+
 
 def B(a):
     from_a = a.send(None)
-    print('response %s from A '%(from_a,))
+    print('response %s from A ' % (from_a,))
     print('B is analysising data from A')
-    b_list = ['x','y','z']
+    b_list = ['x', 'y', 'z']
     try:
         for to_a in b_list:
             from_a = a.send(to_a)
@@ -108,6 +108,7 @@ def B(a):
         print('----from a done----')
     finally:
         a.close()
+
 
 if __name__ == '__main__':
     # threading_test()
@@ -122,7 +123,7 @@ if __name__ == '__main__':
 
     # threads = [threading.Thread(name='t%d'%(i,),target=add2) for i in range(3)]
     # [t.start() for t in threads]
-    
+
     a = A()
     B(a)
 
