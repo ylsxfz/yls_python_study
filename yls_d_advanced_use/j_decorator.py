@@ -3,7 +3,7 @@
  #  @Time : 2020/8/10 16:09 
  #  @Author : yls 
  #  @Version：V 0.1
- #  @File : k_decorator.py
+ #  @File : j_decorator.py
  #  @desc : Python 中使用 @函数名字，放在某些函数上面，起到增强它们功能的作用
             装饰器还在日志管理、图像绘图等有重要的应用。因此，我们很有必要掌握装饰器，逐渐能做到灵活使用。
  """
