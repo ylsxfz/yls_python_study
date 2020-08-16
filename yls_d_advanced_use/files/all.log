@@ -1,0 +1,8 @@
+2020-08-16 09:22:14,292-D:/workspace/python_workspace/yls_python_study/yls_d_advanced_use/k_logging_pit_point.py[line:261] - INFO: 学生 id: 10010, name: xiaoming
+2020-08-16 09:22:14,292-D:/workspace/python_workspace/yls_python_study/yls_d_advanced_use/k_logging_pit_point.py[line:271] - INFO: xiaoming得分：88
+2020-08-16 09:22:14,292-D:/workspace/python_workspace/yls_python_study/yls_d_advanced_use/k_logging_pit_point.py[line:261] - INFO: 学生 id: 001, name: xiaohong
+2020-08-16 09:22:14,292-D:/workspace/python_workspace/yls_python_study/yls_d_advanced_use/k_logging_pit_point.py[line:273] - ERROR: 学生分数类型为 <class 'float'>，不是整型
+2020-08-16 09:24:25,357-D:/workspace/python_workspace/yls_python_study/yls_d_advanced_use/k_logging_pit_point.py[line:261] - INFO: 学生 id: 10010, name: xiaoming
+2020-08-16 09:24:25,357-D:/workspace/python_workspace/yls_python_study/yls_d_advanced_use/k_logging_pit_point.py[line:271] - INFO: xiaoming得分：88
+2020-08-16 09:24:25,357-D:/workspace/python_workspace/yls_python_study/yls_d_advanced_use/k_logging_pit_point.py[line:261] - INFO: 学生 id: 001, name: xiaohong
+2020-08-16 09:24:25,357-D:/workspace/python_workspace/yls_python_study/yls_d_advanced_use/k_logging_pit_point.py[line:273] - ERROR: 学生分数类型为 <class 'float'>，不是整型
