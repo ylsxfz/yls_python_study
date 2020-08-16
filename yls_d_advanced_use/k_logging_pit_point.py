@@ -192,7 +192,7 @@ class Student():
         self.prop_name = None
 
     def __setattr__(self, prop_name, val):
-        print('%s would be set ro %s' % (prop_name, str(val)))
+        print('%s would be set to %s' % (prop_name, str(val)))
 
 
 class Table(object):
@@ -328,8 +328,8 @@ if __name__ == '__main__':
     #     json.dump([xiaoming, xiaohong], f, default=lambda obj: obj.__dict__, ensure_ascii=False, indent=2,
     #               sort_keys=True)
 
-    xiaoming = NewStudent(10010, 'xiaoming')
-    xiaoming.score = 88
-    xiaohong = NewStudent('001', 'xiaohong')
-    xiaohong.score = 90.6
+    # xiaoming = NewStudent(10010, 'xiaoming')
+    # xiaoming.score = 88
+    # xiaohong = NewStudent('001', 'xiaohong')
+    # xiaohong.score = 90.6
     pass
