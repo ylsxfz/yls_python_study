@@ -256,11 +256,13 @@ def numpy_change_arr():
     print(a.argmax())
     print(a.argmax(axis=0))
     print(a.argmax(axis=1))
+    print()
 
     print("a.argmin()：")
     print(a.argmin())
     print(a.argmin(axis=0))
     print(a.argmin(axis=1))
+    print()
 
 
 if __name__ == '__main__':
