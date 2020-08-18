@@ -3,7 +3,7 @@
 #  @Time : 2020/7/24 10:50
 #  @Author : yls
 #  @Version：V 0.1
-#  @File : a_numpy.py
+#  @File : a_numpy_base.py
 #  @desc : NumPy 是基于 Python 的开源数值计算扩展库，用来存储和处理大型矩阵。
         相比于 Python 自身的嵌套列表（nested list structure）结构要高效得多。
         NumPy 数组结构也能用来表示矩阵（matrix），详情参考：
